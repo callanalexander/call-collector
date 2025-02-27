@@ -1,0 +1,12 @@
+hdbscan
+librosa
+matplotlib
+numpy
+pandas
+pillow
+scikit-learn
+scikit-maad
+sounddevice
+soundfile
+tensorflow
+umap-learn
