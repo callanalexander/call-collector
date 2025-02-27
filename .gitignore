@@ -1,0 +1,34 @@
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Python Bytecode Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+.env/
+.venv/
+
+# Jupyter Notebook Autosave
+*.autosave.ipynb
+
+# Cache & Logs
+.cache/
+*.log
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large Output Files (Optional)
+*.h5
+*.csv
+*.pkl
+*.npy
+*.npz
+*.json
