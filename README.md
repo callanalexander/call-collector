@@ -11,6 +11,19 @@ The pipeline can be used with the outputs of any birdsong detection/SED model (e
 This repository contains two Jupyter notebooks designed for analyzing and classifying birdsong using deep learning and clustering techniques.
 
 - **`binaryclassifier.ipynb`** → A deep learning-based classifier for detecting owl vocalizations from spectrograms.
+- # GENERATE SPECTROGRAMS FOR TRAINING
+# This notebook trains a basic binary audio classifier (in this case, to classify owl vocalizations).
+# We suggest using your own data. You will need a folder of 5-second .wav file snippets that:
+# - Do contain your target vocalization (positive examples)
+# - Do not contain your target vocalization (negative examples)
+# Organize these files into 'positive' and 'negative' subfolders.
+
+# An example training dataset can be downloaded here: [INSERT LINK]
+# We also provide test models in the 'models' folder, and our field condition test dataset 
+# can be downloaded here: [INSERT LINK]
+
+import os
+
 - **`cluster_inspector.ipynb`** → A clustering and visualization tool for analyzing detected calls and separating true owl vocalizations from false positives.
 
 ---
