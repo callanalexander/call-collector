@@ -22,6 +22,14 @@ An example training dataset can be downloaded here: [INSERT LINK]
 We also provide test models in the 'models' folder, and our field condition test dataset 
 can be downloaded here: [INSERT LINK]
 
+This notebook implements a binary classifier for detecting Powerful Owl calls in audio recordings. The pipeline includes:
+
+1. Converting audio files to mel-spectrograms
+2. Splitting data into training and test sets
+3. Training a MobileNetV2-based model
+4. Model evaluation
+5. Inference on long audio recordings
+
 - **`cluster_inspector.ipynb`** → A clustering and visualization tool for analyzing detected calls and separating true owl vocalizations from false positives.
 
 ---
