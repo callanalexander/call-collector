@@ -154,22 +154,3 @@ Then:
 
 ---
 
-## **Troubleshooting**
-💡 **Common Issues & Fixes**
-1. **Jupyter Notebook Not Found?**  
-   Install it with:
-   ```bash
-   conda install jupyter
-   ```
-
-2. **ImportError: No module named ‘tkinter’**  
-   Follow **Step 7** to install `tkinter`.
-
-3. **Can’t Find `requirements.txt`?**  
-   Run:
-   ```bash
-   dir  # Windows
-   ls   # Mac
-   ```
-   Ensure you’re in the correct folder before installing dependencies.
-
