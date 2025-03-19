@@ -49,7 +49,7 @@ Download and install Anaconda from [https://www.anaconda.com/download](https://w
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/owl-call-detection.git
+git clone https://github.com/callanalexander/call-collector
 cd owl-call-detection
 
 # Create and activate conda environment
@@ -59,8 +59,6 @@ conda activate owl-detection
 # Install all dependencies from requirements.txt
 pip install -r requirements.txt
 
-# For GPU support (optional, if you have a compatible GPU)
-pip install tensorflow-gpu
 ```
 
 This will install all the necessary libraries including:
@@ -68,7 +66,7 @@ This will install all the necessary libraries including:
 - TensorFlow for deep learning
 - Librosa and Pydub for audio processing
 - UMAP and HDBSCAN for dimensionality reduction and clustering
-- MAAD (Multimodal Animal Acoustic Detector) for acoustic feature extraction
+- sci-kit maad for feature extraction & segmentation
 
 ## Usage
 
