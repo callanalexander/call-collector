@@ -6,6 +6,6 @@ This is the associated code for the paper Alexander, C., Clemens, R., Roe, P., &
 
 The pipeline can be used with the outputs of any birdsong detection/SED model (e.g. BirdNET or Perch), all it requires is short .wav file snippets to work. However in this case we demonstrate it with a simple binary classifier to show how the process can also be used to identify false-positives and also facilitate semi-supervised learning. 
 
-Please note we are currently updating the repo and some functionality may be limited, full code and test files will be available upon publication
+Please note this is a draft version of the repository which we are currently updating with a full tutorial and test data. Primary code is currently available but full code and test files will be available upon publication
 
 
