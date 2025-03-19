@@ -92,14 +92,13 @@ While this framework was developed for Powerful Owl calls, it can be adapted for
 2. Adjusting spectrogram parameters to match your species' vocal range
 3. Tuning clustering parameters to identify call types specific to your target species
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgments
 
-- This project utilises sci-kit maad for segmentation and feature extraction:
+- This project utilises sci-kit maad for segmentation and feature extraction, and UMAP and HDBSCAN for clustering
 - Ulloa, J. S., Haupert, S., Latorre, J. F., Aubin, T., & Sueur, J. (2021). Scikit‐maad: An open‐source and modular toolbox for quantitative soundscape analysis in python. Methods in Ecology and Evolution, 12(12), 2334-2340.
+- McInnes, L., Healy, J., & Melville, J. (2018). Umap: Uniform manifold approximation and projection for dimension reduction. arXiv preprint arXiv:1802.03426.
+- McInnes, L., Healy, J., & Astels, S. (2017). hdbscan: Hierarchical density based clustering. J. Open Source Softw., 2(11), 205.
+
 
 
 
