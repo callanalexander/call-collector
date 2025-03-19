@@ -6,6 +6,8 @@ This is the associated code for the paper Alexander, C., Clemens, R., Roe, P., &
 
 The pipeline can be used with the outputs of any birdsong detection/SED model (e.g. BirdNET or Perch), all it requires is short .wav file snippets to work. However in this case we demonstrate it with a simple binary classifier to show how the process can also be used to identify false-positives and also facilitate semi-supervised learning. 
 
+Please note we are currently updating the repo and some functionality may be limited, full code will be available by time of publication
+
 # **Call Cluster - Birdsong Classification and Clustering**
 
 This repository contains two Jupyter notebooks designed for analyzing and classifying birdsong using deep learning and clustering techniques.
