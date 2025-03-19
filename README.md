@@ -80,7 +80,6 @@ jupyter notebook
    - Start with `train_model.ipynb` to train your classifier
    - Use `test_and_run_model.ipynb` to process audio files
    - Analyze results with `cluster_inspector.ipynb`
-```
 
 ## Customizing for Other Species
 
