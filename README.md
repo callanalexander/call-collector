@@ -33,8 +33,8 @@ This repository contains a set of Jupyter notebooks that form an end-to-end work
 
 ### 3. `cluster_inspector.ipynb`
 - Extracts acoustic features from detected calls using Regions of Interest (ROIs)
-- Performs dimensionality reduction using t-SNE or UMAP
-- Clusters similar call types using DBSCAN or HDBSCAN
+- Performs dimensionality reduction using UMAP
+- Clusters similar call types using HDBSCAN
 - Provides an interactive GUI for inspecting and analyzing clusters
 
 ## Installation with Anaconda
