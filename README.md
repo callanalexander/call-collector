@@ -38,7 +38,7 @@ This repository contains a set of Jupyter notebooks that form an end-to-end work
 - Extracts acoustic features from detected calls using Regions of Interest (ROIs)
 - Performs dimensionality reduction using UMAP
 - Clusters similar call types using HDBSCAN
-- Provides an interactive GUI for inspecting and analyzing clusters
+- Provides an optional basic interactive GUI for inspecting and analyzing clusters
 
 ## Installation with Anaconda
 
