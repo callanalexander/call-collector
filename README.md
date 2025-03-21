@@ -86,6 +86,7 @@ Follow the notebooks in sequence:
 2. Use test_and_run_model.ipynb to process audio files.
 3. Analyze your results with cluster_inspector.ipynb.
 
+If using a different audio classifier, you can skip the first two notebooks and just use the cluster_inspector notebook. You just need a folder of .wav file output snippets with file names in the correct convention. You can then extract the ROIs into a .csv and run the clustering script. 
 
 ## Acknowledgments
 
