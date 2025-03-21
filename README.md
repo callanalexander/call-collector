@@ -11,6 +11,7 @@ Example training, prediction data and the test datasets used in the paper are av
 
 The pipeline can be used with the outputs of any birdsong detection/SED model (e.g. BirdNET or Perch), all it requires is short .wav file snippets to work. However in this case we demonstrate it with a simple binary classifier to show how the process can also be used to identify false-positives and also facilitate semi-supervised learning. 
 
+
 ## Overview
 This repository contains a set of Jupyter notebooks forming an end-to-end workflow for processing audio recordings of owl calls:
 - Training a deep learning model to detect owl calls
@@ -36,7 +37,7 @@ This repository contains a set of Jupyter notebooks forming an end-to-end workfl
    - Provides an optional interactive GUI for inspecting and analyzing clusters
 
 ## Installation with Anaconda
-This project uses several audio processing libraries. We recommend using Anaconda to manage dependencies.
+This project uses several audio processing libraries. We recommend using Anaconda to manage dependencies. Note we have only tested the notebooks on Windows
 
 ### Step 1: Install Anaconda
 Download and install Anaconda from https://www.anaconda.com/download.
@@ -56,7 +57,7 @@ If you prefer not to use Git, download the repository as a ZIP file:
 - Click on Code → Download ZIP
 - Extract the downloaded ZIP file and navigate into the extracted folder (call-collector-main). eg cd path_to_your_folder
 
-Then, proceed with the following commands in Anaconda Prompt (Windows) or Terminal (macOS/Linux):
+Then, proceed with the following commands in Anaconda Prompt
 ```
 # Create and activate the conda environment named 'call-collector'
 conda create -n call-collector python=3.8 -y
