@@ -11,65 +11,85 @@ Example training, prediction data and the test datasets used in the paper are av
 
 The pipeline can be used with the outputs of any birdsong detection/SED model (e.g. BirdNET or Perch), all it requires is short .wav file snippets to work. However in this case we demonstrate it with a simple binary classifier to show how the process can also be used to identify false-positives and also facilitate semi-supervised learning. 
 
-
-
 ## Overview
-
-This repository contains a set of Jupyter notebooks that form an end-to-end workflow for processing audio recordings of owl calls:
-
-1. Training a deep learning model to detect owl calls
-2. Running the model on long-duration audio files to detect potential calls
-3. Extracting audio snippets of potential calls
-4. Analyzing and clustering the detected vocalizations to identify call types
+This repository contains a set of Jupyter notebooks forming an end-to-end workflow for processing audio recordings of owl calls:
+- Training a deep learning model to detect owl calls
+- Detecting potential calls from long-duration audio files
+- Extracting audio snippets of detected calls
+- Analyzing and clustering vocalizations to identify call types
 
 ## Notebooks
+1. **train_model.ipynb**
+   - Generates spectrograms from audio snippets
+   - Creates train/test splits for model evaluation
+   - Trains a MobileNetV2-based neural network to classify owl calls
 
-### 1. `train_model.ipynb`
-- Generates spectrograms from audio snippets
-- Creates train/test splits for model evaluation
-- Trains a MobileNetV2-based neural network to classify owl calls
+2. **test_and_run_model.ipynb**
+   - Evaluates model performance on test datasets
+   - Processes hour-long audio files to detect owl calls
+   - Extracts audio snippets of detected calls for further analysis
 
-### 2. `test_and_run_model.ipynb`
-- Evaluates model performance on test datasets
-- Processes hour-long audio files to detect owl calls 
-- Extracts audio snippets of detected calls for further analysis
-
-### 3. `cluster_inspector.ipynb`
-- Extracts acoustic features from detected calls using Regions of Interest (ROIs)
-- Performs dimensionality reduction using UMAP
-- Clusters similar call types using HDBSCAN
-- Provides an optional basic interactive GUI for inspecting and analyzing clusters
+3. **cluster_inspector.ipynb**
+   - Extracts acoustic features from detected calls using Regions of Interest (ROIs)
+   - Performs dimensionality reduction using UMAP
+   - Clusters similar call types using HDBSCAN
+   - Provides an optional interactive GUI for inspecting and analyzing clusters
 
 ## Installation with Anaconda
-
 This project uses several audio processing libraries. We recommend using Anaconda to manage dependencies.
 
 ### Step 1: Install Anaconda
+Download and install Anaconda from https://www.anaconda.com/download.
 
-Download and install Anaconda from [https://www.anaconda.com/download](https://www.anaconda.com/download).
+### Step 2: Set up the environment and install dependencies
 
-### Step 2: Create a new environment and install dependencies in Anaconda Prompt
-
-```bash
-# Clone the repository and navigate into it
+**Option A: Using Git (recommended)**
+If you have Git installed, clone the repository:
+```
 git clone https://github.com/callanalexander/call-collector.git
 cd call-collector
+```
 
+**Option B: Without Git**
+If you prefer not to use Git, download the repository as a ZIP file:
+- Go to the repository page: https://github.com/callanalexander/call-collector
+- Click on Code → Download ZIP
+- Extract the downloaded ZIP file and navigate into the extracted folder (call-collector-main).
+
+Then, proceed with the following commands in Anaconda Prompt (Windows) or Terminal (macOS/Linux):
+```
 # Create and activate the conda environment named 'call-collector'
 conda create -n call-collector python=3.8 -y
 conda activate call-collector
 
 # Install dependencies from requirements.txt
 pip install -r requirements.txt
-
 ```
 
-This will install all the necessary libraries including:
+This will install all the necessary libraries, including:
 - NumPy, Pandas, Matplotlib for data manipulation and visualization
 - TensorFlow for deep learning
 - Librosa and Pydub for audio processing
 - UMAP and HDBSCAN for dimensionality reduction and clustering
-- sci-kit maad for feature extraction & segmentation
+- scikit-maad for acoustic feature extraction & segmentation
+
+## Usage
+Open Jupyter Notebook from your activated conda environment:
+```
+conda activate call-collector
+jupyter notebook
+```
+
+Follow the notebooks in sequence:
+1. Start with train_model.ipynb to train your classifier.
+2. Use test_and_run_model.ipynb to process audio files.
+3. Analyze your results with cluster_inspector.ipynb.
+
+## Customizing for Other Species
+While this workflow was developed for detecting Powerful Owl calls, it can easily be adapted for other species by:
+- Training the detection model with audio examples of your target species
+- Adjusting spectrogram parameters to match your species' vocal characteristics
+- Tuning clustering parameters (UMAP, HDBSCAN) to identify species-specific call types
 
 ## Usage
 
