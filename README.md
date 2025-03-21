@@ -51,15 +51,15 @@ Download and install Anaconda from [https://www.anaconda.com/download](https://w
 ### Step 2: Create a new environment and install dependencies
 
 ```bash
-# Clone the repository
-git clone https://github.com/callanalexander/call-collector
-cd owl-call-detection
+# Clone the repository and navigate into it
+git clone https://github.com/callanalexander/call-collector.git
+cd call-collector
 
-# Create and activate conda environment
-conda create -n owl-detection python=3.8
-conda activate owl-detection
+# Create and activate the conda environment named 'call-collector'
+conda create -n call-collector python=3.8 -y
+conda activate call-collector
 
-# Install all dependencies from requirements.txt
+# Install dependencies from requirements.txt
 pip install -r requirements.txt
 
 ```
