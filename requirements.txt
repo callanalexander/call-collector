@@ -8,7 +8,7 @@ librosa
 pydub
 umap-learn
 hdbscan
-maad
+scikit-maad
 soundfile
 sounddevice
 tk
