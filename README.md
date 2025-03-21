@@ -54,7 +54,7 @@ cd call-collector
 If you prefer not to use Git, download the repository as a ZIP file:
 - Go to the repository page: https://github.com/callanalexander/call-collector
 - Click on Code → Download ZIP
-- Extract the downloaded ZIP file and navigate into the extracted folder (call-collector-main).
+- Extract the downloaded ZIP file and navigate into the extracted folder (call-collector-main). eg cd path_to_your_folder
 
 Then, proceed with the following commands in Anaconda Prompt (Windows) or Terminal (macOS/Linux):
 ```
