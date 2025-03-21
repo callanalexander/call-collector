@@ -46,9 +46,9 @@ This project uses several audio processing libraries. We recommend using Anacond
 
 ### Step 1: Install Anaconda
 
-Download and install Anaconda from [https://www.anaconda.com/download](https://www.anaconda.com/download)
+Download and install Anaconda from [https://www.anaconda.com/download](https://www.anaconda.com/download).
 
-### Step 2: Create a new environment and install dependencies
+### Step 2: Create a new environment and install dependencies in Anaconda Prompt
 
 ```bash
 # Clone the repository and navigate into it
