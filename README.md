@@ -60,7 +60,7 @@ If you prefer not to use Git, download the repository as a ZIP file:
 Then, proceed with the following commands in Anaconda Prompt
 ```
 # Create and activate the conda environment named 'call-collector'
-conda create -n call-collector python=3.8 -y
+conda create -n call-collector python=3.9 -y
 conda activate call-collector
 
 # Install dependencies from requirements.txt
