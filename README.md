@@ -86,32 +86,6 @@ Follow the notebooks in sequence:
 2. Use test_and_run_model.ipynb to process audio files.
 3. Analyze your results with cluster_inspector.ipynb.
 
-## Customizing for Other Species
-While this workflow was developed for detecting Powerful Owl calls, it can easily be adapted for other species by:
-- Training the detection model with audio examples of your target species
-- Adjusting spectrogram parameters to match your species' vocal characteristics
-- Tuning clustering parameters (UMAP, HDBSCAN) to identify species-specific call types
-
-## Usage
-
-1. Open Jupyter Notebook:
-```bash
-conda activate owl-detection
-jupyter notebook
-```
-
-2. Follow the notebooks in sequence:
-   - Start with `train_model.ipynb` to train your classifier
-   - Use `test_and_run_model.ipynb` to process audio files
-   - Analyze results with `cluster_inspector.ipynb`
-
-## Customizing for Other Species
-
-While this framework was developed for Powerful Owl calls, it can be adapted for other species by:
-
-1. Training the detection model with examples of your target species
-2. Adjusting spectrogram parameters to match your species' vocal range
-3. Tuning clustering parameters to identify call types specific to your target species
 
 ## Acknowledgments
 
