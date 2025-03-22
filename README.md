@@ -2,7 +2,7 @@
 
 This repository demonstrates a post-processing pipeline after classification of bird vocalisations. The aim of this pipeline is to annotate individual notes for the target species (in this case, we use _Ninox strenua_, the Powerful Owl). This is achieved by segmenting the audio outputs and extracting acoustic features and then iteratively clustering those features using UMAP and HDBSCAN.
 
-**Please note this is a draft version of the repository which we are currently updating with a full tutorial and test data. Essential code is currently available but test files are being updated & uploaded and will be fully available upon publication**
+**Please note this is a draft version of the repository which we are currently updating**
 
 This is the associated code for the paper **Alexander, C., Clemens, R., Roe, P., & Fuller, S. Automated Note Annotation after Bioacoustic Classification: Unsupervised Clustering of Extracted Acoustic Features Improves Detection of a Cryptic Owl.** Pre-print available 
 [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5099945)
